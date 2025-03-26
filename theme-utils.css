@@ -1,0 +1,36 @@
+/* Theme utility classes */
+.theme-highlight {
+  color: hsl(var(--primary));
+}
+
+.theme-border-left {
+  border-left-color: hsl(var(--primary));
+}
+
+.theme-border {
+  border-color: hsl(var(--primary));
+}
+
+.theme-bg-subtle {
+  background-color: hsl(var(--accent));
+}
+
+.theme-bg-primary {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+/* Override specific components */
+.journal-entry.active {
+  background-color: hsl(var(--accent));
+  border-left: 3px solid hsl(var(--primary));
+}
+
+.journal-entry:not(.active):hover {
+  background-color: hsl(var(--accent) / 0.5);
+}
+
+.journal-entry-title {
+  color: hsl(var(--primary));
+}
+
